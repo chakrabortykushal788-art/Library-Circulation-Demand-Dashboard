@@ -1,0 +1,191 @@
+{
+  "rows": {
+    "input": 437,
+    "valid": 420,
+    "rejected": 17,
+    "rejected_by_reason": {
+      "duplicate loan_id": 8,
+      "missing field": 4,
+      "return date before issue date": 3,
+      "invalid date format": 2
+    },
+    "still_on_loan": 3
+  },
+  "loan_length_days": {
+    "returned_loans": 417,
+    "mean_days": 11.113,
+    "median_days": 11.0,
+    "std_days": 4.687,
+    "p90_days": 17.0,
+    "max_days": 25.0
+  },
+  "monthly_loans": {
+    "2025-08": 18,
+    "2025-09": 45,
+    "2025-10": 37,
+    "2025-11": 39,
+    "2025-12": 57,
+    "2026-01": 30,
+    "2026-02": 33,
+    "2026-03": 32,
+    "2026-04": 33,
+    "2026-05": 47,
+    "2026-06": 32,
+    "2026-07": 17
+  },
+  "peak_months": [
+    "Dec 2025",
+    "May 2026"
+  ],
+  "category_summary": {
+    "Computer Science": {
+      "loans": 102,
+      "borrowers": 55,
+      "overdue_rate_pct": 24.51,
+      "mean_days_returned": 11.49,
+      "share_pct": 24.286,
+      "titles": 60,
+      "loans_per_title": 1.7
+    },
+    "Electronics": {
+      "loans": 101,
+      "borrowers": 53,
+      "overdue_rate_pct": 27.723,
+      "mean_days_returned": 11.02,
+      "share_pct": 24.048,
+      "titles": 50,
+      "loans_per_title": 2.02
+    },
+    "Mathematics": {
+      "loans": 84,
+      "borrowers": 42,
+      "overdue_rate_pct": 21.429,
+      "mean_days_returned": 10.952,
+      "share_pct": 20.0,
+      "titles": 40,
+      "loans_per_title": 2.1
+    },
+    "Literature": {
+      "loans": 50,
+      "borrowers": 33,
+      "overdue_rate_pct": 20.0,
+      "mean_days_returned": 10.898,
+      "share_pct": 11.905,
+      "titles": 40,
+      "loans_per_title": 1.25
+    },
+    "Physics": {
+      "loans": 47,
+      "borrowers": 33,
+      "overdue_rate_pct": 23.404,
+      "mean_days_returned": 10.936,
+      "share_pct": 11.19,
+      "titles": 30,
+      "loans_per_title": 1.567
+    },
+    "Management": {
+      "loans": 36,
+      "borrowers": 26,
+      "overdue_rate_pct": 25.0,
+      "mean_days_returned": 11.194,
+      "share_pct": 8.571,
+      "titles": 20,
+      "loans_per_title": 1.8
+    }
+  },
+  "evaluation": {
+    "Computer Science": {
+      "raw_loans": 106,
+      "clean_loans": 102,
+      "inflation_pct": 3.922,
+      "rank_raw": 1,
+      "rank_clean": 1,
+      "loans_per_title": 1.7,
+      "rank_per_title": 4,
+      "overdue_pct_grace0": 24.51,
+      "overdue_pct_grace7": 3.922
+    },
+    "Electronics": {
+      "raw_loans": 104,
+      "clean_loans": 101,
+      "inflation_pct": 2.97,
+      "rank_raw": 2,
+      "rank_clean": 2,
+      "loans_per_title": 2.02,
+      "rank_per_title": 2,
+      "overdue_pct_grace0": 27.723,
+      "overdue_pct_grace7": 0.99
+    },
+    "Mathematics": {
+      "raw_loans": 88,
+      "clean_loans": 84,
+      "inflation_pct": 4.762,
+      "rank_raw": 3,
+      "rank_clean": 3,
+      "loans_per_title": 2.1,
+      "rank_per_title": 1,
+      "overdue_pct_grace0": 21.429,
+      "overdue_pct_grace7": 0.0
+    },
+    "Literature": {
+      "raw_loans": 53,
+      "clean_loans": 50,
+      "inflation_pct": 6.0,
+      "rank_raw": 4,
+      "rank_clean": 4,
+      "loans_per_title": 1.25,
+      "rank_per_title": 6,
+      "overdue_pct_grace0": 20.0,
+      "overdue_pct_grace7": 4.0
+    },
+    "Physics": {
+      "raw_loans": 47,
+      "clean_loans": 47,
+      "inflation_pct": 0.0,
+      "rank_raw": 5,
+      "rank_clean": 5,
+      "loans_per_title": 1.567,
+      "rank_per_title": 5,
+      "overdue_pct_grace0": 23.404,
+      "overdue_pct_grace7": 2.128
+    },
+    "Management": {
+      "raw_loans": 37,
+      "clean_loans": 36,
+      "inflation_pct": 2.778,
+      "rank_raw": 6,
+      "rank_clean": 6,
+      "loans_per_title": 1.8,
+      "rank_per_title": 3,
+      "overdue_pct_grace0": 25.0,
+      "overdue_pct_grace7": 2.778
+    }
+  },
+  "overdue_rule_overall": {
+    "overdue_pct_grace0": 24.048,
+    "overdue_pct_grace7": 2.143
+  },
+  "top_books": {
+    "B014": 6,
+    "B055": 6,
+    "B230": 5,
+    "B222": 5,
+    "B087": 5
+  },
+  "top_borrowers": {
+    "M006": 26,
+    "M003": 21,
+    "M002": 20,
+    "M007": 20,
+    "M008": 16
+  },
+  "interpretation": [
+    "420 valid loans remain from 437 input rows; 17 rows were rejected (duplicate loan_id: 8, missing field: 4, return date before issue date: 3, invalid date format: 2).",
+    "By raw loan count the most requested category is Computer Science (102 loans, 24.3% of loans).",
+    "Per catalogue title, Mathematics is busiest (2.10 loans per title), so the conclusion about 'high demand' depends on whether size of collection is considered.",
+    "Loans last 11.1 days on average (median 11, 90th percentile 17).",
+    "Months above mean + 1 SD of monthly loans: Dec 2025, May 2026; compare them with the academic calendar (e.g. exam periods) before treating them as genuine demand rather than incomplete or duplicated data.",
+    "Overdue rate is 24.0% with the stored 14-day rule but 2.1% if a 7-day grace period is allowed.",
+    "All data are simulated; the figures demonstrate the dashboard, not real borrowing behaviour."
+  ]
+}

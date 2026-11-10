@@ -1,0 +1,7 @@
+category,loans,borrowers,overdue_rate_pct,mean_days_returned,share_pct,titles,loans_per_title
+Computer Science,102,55,24.51,11.49,24.286,60,1.7
+Electronics,101,53,27.723,11.02,24.048,50,2.02
+Mathematics,84,42,21.429,10.952,20.0,40,2.1
+Literature,50,33,20.0,10.898,11.905,40,1.25
+Physics,47,33,23.404,10.936,11.19,30,1.567
+Management,36,26,25.0,11.194,8.571,20,1.8

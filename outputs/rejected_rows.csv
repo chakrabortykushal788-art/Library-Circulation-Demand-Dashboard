@@ -1,0 +1,18 @@
+line,loan_id,reason
+73,X0016,invalid date format
+89,X0015,invalid date format
+90,X0012,return date before issue date
+129,X0009,missing field: category
+198,X0014,return date before issue date
+208,L0096,duplicate loan_id
+221,L0209,duplicate loan_id
+233,L0221,duplicate loan_id
+242,L0230,duplicate loan_id
+272,X0011,missing field: category
+294,X0008,missing field: student_id
+299,X0010,missing field: student_id
+300,L0285,duplicate loan_id
+301,L0286,duplicate loan_id
+355,X0013,return date before issue date
+382,L0053,duplicate loan_id
+411,L0263,duplicate loan_id

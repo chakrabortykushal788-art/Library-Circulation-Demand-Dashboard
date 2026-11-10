@@ -1,0 +1,44 @@
+================================================================
+ LIBRARY CIRCULATION AND DEMAND DASHBOARD (simulated data)
+================================================================
+Input rows: 437   Valid: 420   Rejected: 17
+   rejected - duplicate loan_id: 8
+   rejected - missing field: 4
+   rejected - return date before issue date: 3
+   rejected - invalid date format: 2
+Still on loan at 2026-07-31: 3
+
+Loan length (returned loans): mean 11.1 d, median 11 d, SD 4.7, P90 17 d
+
+Category summary:
+                   loans  borrowers  overdue_rate_pct  mean_days_returned  share_pct  titles  loans_per_title
+category                                                                                                    
+Computer Science    102         55             24.51               11.49      24.29      60             1.70
+Electronics         101         53             27.72               11.02      24.05      50             2.02
+Mathematics          84         42             21.43               10.95      20.00      40             2.10
+Literature           50         33             20.00               10.90      11.90      40             1.25
+Physics              47         33             23.40               10.94      11.19      30             1.57
+Management           36         26             25.00               11.19       8.57      20             1.80
+
+Evaluation:
+                   raw_loans  clean_loans  inflation_pct  rank_raw  rank_clean  loans_per_title  rank_per_title  overdue_pct_grace0  overdue_pct_grace7
+Computer Science        106          102           3.92         1           1             1.70               4               24.51                3.92
+Electronics             104          101           2.97         2           2             2.02               2               27.72                0.99
+Mathematics              88           84           4.76         3           3             2.10               1               21.43                0.00
+Literature               53           50           6.00         4           4             1.25               6               20.00                4.00
+Physics                  47           47           0.00         5           5             1.57               5               23.40                2.13
+Management               37           36           2.78         6           6             1.80               3               25.00                2.78
+
+Most borrowed books : {'B014': 6, 'B055': 6, 'B230': 5, 'B222': 5, 'B087': 5}
+Most active borrowers: {'M006': 26, 'M003': 21, 'M002': 20, 'M007': 20, 'M008': 16}
+
+Interpretation:
+ - 420 valid loans remain from 437 input rows; 17 rows were rejected (duplicate loan_id: 8, missing field: 4, return date before issue date: 3, invalid date format: 2).
+ - By raw loan count the most requested category is Computer Science (102 loans, 24.3% of loans).
+ - Per catalogue title, Mathematics is busiest (2.10 loans per title), so the conclusion about 'high demand' depends on whether size of collection is considered.
+ - Loans last 11.1 days on average (median 11, 90th percentile 17).
+ - Months above mean + 1 SD of monthly loans: Dec 2025, May 2026; compare them with the academic calendar (e.g. exam periods) before treating them as genuine demand rather than incomplete or duplicated data.
+ - Overdue rate is 24.0% with the stored 14-day rule but 2.1% if a 7-day grace period is allowed.
+ - All data are simulated; the figures demonstrate the dashboard, not real borrowing behaviour.
+
+Saved figures, summary.json and CSV summaries in 'outputs/'
